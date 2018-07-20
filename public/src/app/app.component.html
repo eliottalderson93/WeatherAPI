@@ -1,0 +1,15 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero-body">
+      <p class="title">Weather API</p>
+    </div>
+  </div>
+</section>
+<section class="level">
+  <div class="tile" *ngFor = "let city of cities">
+    <div class="content">
+      <button (click) = "cityNav($event)" value = "{{city.id}}">{{city.name}}</button>
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>
